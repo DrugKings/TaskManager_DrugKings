@@ -1,4 +1,15 @@
-table{
+table, th, td{
+    margin: auto;
     border: 1px solid black;
+    max-width: 80%;
+    border-spacing: 0cm;
+}
+th, td{
     width: 400px;
+}
+th {
+    text-align: center;
+}
+td {
+    text-align: left;
 }
