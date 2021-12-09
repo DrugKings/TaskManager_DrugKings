@@ -7,7 +7,8 @@ $(function() {
     const sablonElemUser = $('.User');
 
     function userLista(users) {
-        szuloElemUser.empty()
+      szuloElemUser.empty()
+      szuloElemUser.html('<tr><th>UserID</th><th>UserName</th></tr>')
         users.forEach(function (elem) {
           sablonElemUser.show()
           let node = sablonElemUser.clone().appendTo(szuloElemUser)
