@@ -40,6 +40,7 @@ $(function() {
           userId : $("#elvegzi").val(),
           status : $("#status").val()
       };
+      
       myAjax.postAdat(apiVegPontTask, ujAdat);
       }
   );
