@@ -1,15 +1,14 @@
 class Task{
-    constructor(elem, adat,id){
-        this.elem = elem;
-        this.title = this.elem.children("h3");
-        this.description=this.elem.children("p");
-        this.endDate=this.endDate.children("p");
-
-        this.nev=this.nev.children("p");
-
-        this.status=this.status.status("p");
-        this.gomb=this.elem.children(".modosit");
-        this.gomb=this.elem.children(".torles");
+    constructor(node, adat){
+        this.node = node;
+        this.adat = adat;
+        this.title = this.node.children(".cim");
+        this.description=this.node.children(".leiras");
+        this.endDate=this.node.children(".date");
+        this.nev=this.node.children(".nev");
+        this.status=this.node.children(".folyamat");
+        this.gomb=this.node.children(".modosit");
+        this.gomb=this.node.children(".torles");
 
         this.gomb.on("click", () => {
             this.kattintModosit();
@@ -17,6 +16,7 @@ class Task{
         this.gomb.on("click", () => {
             this.kattintTorol();
         });
+        this.setAdatok(this.adat);
     }
     
         
@@ -35,9 +35,10 @@ kattintTorles(){
     console.log("torol");
 }
 setAdatok(ertekek){
-    this.nev.html(ertekek.title);
-    this.leiras.html(ertekek.description);
-    this.leiras.html(ertekek.leiras);
-    this.ar.html(ertekek.ar);
+    this.title.text(ertekek.title);
+    this.description.text(ertekek.description);
+    this.endDate.text(ertekek.endDate);
+    this.nev.text(ertekek.userId);
+    this.status.text(ertekek.status);
 }
 }
