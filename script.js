@@ -1,10 +1,15 @@
 $(function() {
     const myAjax = new MyAjax();
     const users=[];
-    let apiVegPont = "http://localhost:3000/USER";
-    myAjax.getAdat(apiVegPont, users, userLista);
+    const tasks=[];
+    let apiVegPontUser = "http://localhost:3000/USER";
+    myAjax.getAdat(apiVegPontUser, users, userLista);
+    let apiVegPontTask = "http://localhost:3000/TASK";
+    myAjax.getAdat(apiVegPontTask, tasks, taskLista);
     const szuloElemUser = $('table');
     const sablonElemUser = $('.User');
+    const szuloElemTask = $('section');
+    const sablonElemTask = $('.task');
 
     function userLista(users) {
       szuloElemUser.empty()
@@ -16,5 +21,13 @@ $(function() {
         })
         sablonElemUser.hide()
     }
-    
+    function taskLista(tasks) {
+      szuloElemTask.empty()
+        tasks.forEach(function (elem) {
+          sablonElemTask.show()
+          let node = sablonElemTask.clone().appendTo(szuloElemTask)
+          const obj = new Task(node, elem)
+        })
+        sablonElemTask.hide()
+    }
 })
