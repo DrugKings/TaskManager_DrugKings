@@ -10,6 +10,8 @@ $(function() {
     const sablonElemUser = $('.User');
     const szuloElemTask = $('.taskosok');
     const sablonElemTask = $('.task');
+    $("#modositas").hide();
+    $("#feltolt").show();
 
     function userLista(users) {
       szuloElemUser.empty()
@@ -48,4 +50,30 @@ $(function() {
     let torolendoID = event.detail.id;
     myAjax.deleteAdat(apiVegPontTask, torolendoID);
 });
+$(window).on("modosit", (event) => {
+  let valasztottid = event.detail.id;
+  $("#taskId").val(valasztottid);
+  $("#cim").val(event.detail.title);
+  $("#leiras").val(event.detail.description);
+  $("#hatarido").val(event.detail.endDate);
+  $("#elvegzi").val(event.detail.userId);
+  $("#status").val(event.detail.status);
+  $("#modositas").show();
+  $("#feltolt").hide();
+});
+$("#modositas").on("click", () => {
+  let valasztottid = $("#taskId").val();
+  let ujAdat = {
+      id: $("#taskId").val(),
+      title: $("#cim").val(),
+      description: $("#leiras").val(),
+      endDate : $("#hatarido").val(),
+      userId : $("#elvegzi").val(),
+      status : $("#status").val()
+  };
+  myAjax.putAdat(apiVegPontTask, ujAdat, valasztottid);
+  $("#modositas").hide();
+  $("#feltolt").show();
+  }
+);
 })

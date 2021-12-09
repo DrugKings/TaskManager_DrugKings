@@ -15,18 +15,18 @@
   ],
   "TASK": [
     {
-      "id": 1,
-      "title": "1Teasfasdgasdgzt title",
-      "description": "1Teszt leírás",
-      "endDate": "12020.12.09",
-      "userId": 0,
-      "status": "1ToDo"
-    },
-    {
       "id": "3",
       "title": "asdgfasdg",
       "description": "asdgasdfg",
-      "endDate": "214235",
+      "endDate": "",
+      "userId": "0",
+      "status": "Kész"
+    },
+    {
+      "id": "2",
+      "title": "asdgfasdg",
+      "description": "asdgasdfgasdgasdfgh",
+      "endDate": "",
       "userId": "2",
       "status": "Kész"
     }

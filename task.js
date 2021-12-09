@@ -22,12 +22,10 @@ class Task{
 kattintModosit(){
     let esemeny = new CustomEvent("modosit", {detail: this.adat});
     window.dispatchEvent(esemeny);
-    console.log("modosit");
 }
 kattintTorles(){
     let esemeny = new CustomEvent("torol", {detail: this.adat});
     window.dispatchEvent(esemeny);
-    console.log("torol");
 }
 setAdatok(ertekek){
     this.title.text(ertekek.title);
