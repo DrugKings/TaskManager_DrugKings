@@ -1,21 +1,21 @@
-$(function () {
+class User {
+  constructor(){
     const myAjax = new MyAjax();
-    const users = [];
-    let apiVegPontUser = "http://localhost:3000/USER";
+    const users=[];
+    let apiVegPont = "http://localhost:3000/USER";
+    myAjax.getAdat(apiVegPont, users, userLista);
+    this.termekLista();
+  }
   
-    myAjax.getAdat(apiVegPontUser, users, termekLista);
+  termekLista(termekek) {
+    const szuloElem = $("table");
+    const sablonElem = $(".user");
 
-    function termekLista(termekek) {
-        szuloElem.empty()
-        termekek.forEach(function (elem) {
-          sablonElem.show()
-          let node = sablonElem.clone().appendTo(szuloElem)
-          const obj = new TermekAruhaz(node, elem)
-        })
-        sablonElem.hide()
-    
-        $(window).on('termekKosarba', (event) => {
-          kosar.setKosar(event.detail)
-        })
-      }
-})
+    termekek.forEach(function(elem) {
+        sablonElem.clone().appendTo(szuloElem);
+
+    });
+    sablonElem.remove();
+}
+
+}
