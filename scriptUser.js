@@ -1,21 +1,13 @@
 class User {
-  constructor(){
-    const myAjax = new MyAjax();
-    const users=[];
-    let apiVegPont = "http://localhost:3000/USER";
-    myAjax.getAdat(apiVegPont, users, userLista);
-    this.termekLista();
+  constructor(node, adat) {
+    this.node = node;
+    this.adat = adat;
+    this.userid = this.node.children(".UserID");
+    this.username = this.node.children(".UserName");
   }
-  
-  termekLista(termekek) {
-    const szuloElem = $("table");
-    const sablonElem = $(".user");
-
-    termekek.forEach(function(elem) {
-        sablonElem.clone().appendTo(szuloElem);
-
-    });
-    sablonElem.remove();
+  setAdat(adat) {
+    this.adat = adat;
+    this.userid.text(adat.userId);
+    this.username.text(adat.name);
 }
-
 }
