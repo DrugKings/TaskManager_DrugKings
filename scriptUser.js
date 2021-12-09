@@ -10,6 +10,5 @@ class User {
     this.adat = adat;
     this.userid.text(adat.userId);
     this.username.text(adat.name);
-    console.log(this.adat);
 }
 }
