@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="task.css" rel="stylesheet" type="text/css"/>
+    <title>Drug Kings</title>
 </head>
 <body>
         <main>
@@ -15,6 +16,57 @@
                     <li><a href="task.html">Fizetés</a></li>
                 </ul>
             </nav>
+            <article>
+                <section id="letrehoztask">
+                    <form action="/action_page.php">
+                        <label for="felhasznalotxt">Felhasznalo: </label>
+                        <input  type="text" name="id" id="felhaszno" placeholder="ID"><br><br>
+
+                        <label for="cimtxt">Cím: </label>
+                        <input type="text" name="cim" id="cim" placeholder="Cim"><br><br>
+
+                        <label for="leirastxt">Leiras: </label>
+                        <input type="text" name="leiras" id="leiras" placeholder="Leiras..." rows="4" cols="50"><br><br>
+
+                        <label for="folyamatxt">Folyamatban: </label>
+                        <select id="statusz">
+                            <option label="Folyamatban"></option>
+                          </select><br><br>
+
+                            <label for="statusztxt">Hatarido: </label>
+                            <input type="date" id="hatarido" name="hatarido"><br><br>
+
+                            <option label="Folyamatban"></option>
+                          </select><br><br>
+
+                          
+
+                          <input type="submit" value="Submit">
+                      </form>
+                </section>
+                <section id="taskok">
+                    <div class="task">
+                        <h3 class="date">1. Feladat</h3>
+                    <p>Feladat leirasa</p>
+                    <p class="date">
+                        2021-11-11
+                    </p>
+
+                    <p class="nev">
+                        Kis Mariska
+                    </p>
+
+                    <p class="folyamat">
+                        Teszteles
+                    </p>
+
+                    <button class="modosit">Modosit</button>
+                    <button class="torles">Torles</button>
+                    </div>
+                    
+
+                </section>
+            </article>
         </main>
 </body>
 </html>
