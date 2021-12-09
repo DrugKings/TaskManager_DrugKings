@@ -1,0 +1,19 @@
+.task{
+    padding:20px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nev,.date,.folyamat{
+    display: inline-block;
+    border: 1px solid rgb(196, 192, 192);
+    margin: 10px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 5px;
+}
+.gombok{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
