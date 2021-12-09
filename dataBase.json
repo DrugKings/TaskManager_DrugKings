@@ -15,12 +15,19 @@
     ],
     "TASK": [
       {
-        "id": 1,
+        "id": 0,
         "title": "Teszt title",
         "description": "Teszt leírás",
         "end-date" : "2020.12.09",
         "userId" : 1,
         "status" : "ToDo"
+      },{
+        "id": 1,
+        "title": "1Teszt title",
+        "description": "1Teszt leírás",
+        "end-date" : "12020.12.09",
+        "userId" : 0,
+        "status" : "1ToDo"
       }
     ]
   }
