@@ -19,11 +19,6 @@ class Task{
         this.setAdatok(this.adat);
     }
     
-        
-//        this.gomb.on("click", () => {
-//            this.kattint();
-//        });
-
 kattintModosit(){
     let esemeny = new CustomEvent("modosit", {detail: this.adat});
     window.dispatchEvent(esemeny);
