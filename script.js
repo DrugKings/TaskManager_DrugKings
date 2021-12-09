@@ -8,7 +8,7 @@ $(function() {
     myAjax.getAdat(apiVegPontTask, tasks, taskLista);
     const szuloElemUser = $('table');
     const sablonElemUser = $('.User');
-    const szuloElemTask = $('section');
+    const szuloElemTask = $('.taskosok');
     const sablonElemTask = $('.task');
 
     function userLista(users) {
