@@ -9,7 +9,6 @@ class Task{
         this.status=this.node.children(".folyamat");
         this.gomb=this.node.children(".modosit");
         this.gombtorl=this.node.children(".torles");
-        console.log(this.gombtorl);
         this.gomb.on("click", () => {
             this.kattintModosit();
         });

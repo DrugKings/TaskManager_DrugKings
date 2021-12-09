@@ -16,17 +16,17 @@
   "TASK": [
     {
       "id": "3",
-      "title": "asdgfasdg",
-      "description": "asdgasdfg",
-      "endDate": "",
-      "userId": "0",
-      "status": "Kész"
+      "title": "asdgfasdg12346",
+      "description": "asdgasdfgASDG21",
+      "endDate": "2021-12-17",
+      "userId": "2",
+      "status": "Testelés alatt"
     },
     {
       "id": "2",
       "title": "asdgfasdg",
       "description": "asdgasdfgasdgasdfgh",
-      "endDate": "",
+      "endDate": "2021-12-02",
       "userId": "2",
       "status": "Kész"
     }

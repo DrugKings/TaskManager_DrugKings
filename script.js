@@ -45,7 +45,15 @@ $(function() {
 
       myAjax.postAdat(apiVegPontTask, ujAdat);
       }
+      
   );
+  let keresomezo = $("#kereso-input");
+  keresomezo.on("keyup", () => {
+    let apivegpont = "http://localhost:3000/TASK";
+    apivegpont += "?title_like=" + keresomezo.val();
+    myAjax.getAdat(apivegpont, tasks, taskLista);
+    console.log(apivegpont);
+  });
   $(window).on("torol", (event) => {
     let torolendoID = event.detail.id;
     myAjax.deleteAdat(apiVegPontTask, torolendoID);
