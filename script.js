@@ -30,4 +30,17 @@ $(function() {
         })
         sablonElemTask.hide()
     }
+    $("#feltolt").on("click", () => {
+      let hossz = tasks.length;
+      let ujAdat = {
+          id: hossz + 1,
+          title: $("#cim").val(),
+          description: $("#leiras").val(),
+          endDate : $("#hatarido").val(),
+          userId : $("#elvegzi").val(),
+          status : $("#status").val()
+      };
+      myAjax.postAdat(apiVegPontTask, ujAdat);
+      }
+  );
 })

@@ -1,33 +1,50 @@
 {
-    "USER": [
-      {
-        "userId": 0,
-        "name": "Ménesi Csaba"
-      },
-      {
-        "userId": 1,
-        "name": "Bartók Roland"
-      },
-      {
-        "userId": 2,
-        "name": "Bogdán Gábor"
-      }
-    ],
-    "TASK": [
-      {
-        "id": 0,
-        "title": "Teszt title",
-        "description": "Teszt leírás",
-        "endDate" : "2020.12.09",
-        "userId" : 1,
-        "status" : "ToDo"
-      },{
-        "id": 1,
-        "title": "1Teasfasdgasdgzt title",
-        "description": "1Teszt leírás",
-        "endDate" : "12020.12.09",
-        "userId" : 0,
-        "status" : "1ToDo"
-      }
-    ]
-  }
+  "USER": [
+    {
+      "userId": 0,
+      "name": "Ménesi Csaba"
+    },
+    {
+      "userId": 1,
+      "name": "Bartók Roland"
+    },
+    {
+      "userId": 2,
+      "name": "Bogdán Gábor"
+    }
+  ],
+  "TASK": [
+    {
+      "id": 0,
+      "title": "Teszt title",
+      "description": "Teszt leírás",
+      "endDate": "2020.12.09",
+      "userId": 1,
+      "status": "ToDo"
+    },
+    {
+      "id": 1,
+      "title": "1Teasfasdgasdgzt title",
+      "description": "1Teszt leírás",
+      "endDate": "12020.12.09",
+      "userId": 0,
+      "status": "1ToDo"
+    },
+    {
+      "id": "3",
+      "title": "asdgfasdg",
+      "description": "asdgasdfg",
+      "endDate": "214235",
+      "userId": "2",
+      "status": "Kész"
+    },
+    {
+      "id": "4",
+      "title": "asdfgasdfg",
+      "description": "sdfghsdfgh",
+      "endDate": "2021-12-15",
+      "userId": "2",
+      "status": "Testelés alatt"
+    }
+  ]
+}
