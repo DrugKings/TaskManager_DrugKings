@@ -40,8 +40,12 @@ $(function() {
           userId : $("#elvegzi").val(),
           status : $("#status").val()
       };
-      
+
       myAjax.postAdat(apiVegPontTask, ujAdat);
       }
   );
+  $(window).on("torol", (event) => {
+    let torolendoID = event.detail.id;
+    myAjax.deleteAdat(apiVegPontTask, torolendoID);
+});
 })

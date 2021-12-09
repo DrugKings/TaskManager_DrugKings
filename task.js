@@ -8,13 +8,13 @@ class Task{
         this.nev=this.node.children(".nev");
         this.status=this.node.children(".folyamat");
         this.gomb=this.node.children(".modosit");
-        this.gomb=this.node.children(".torles");
-
+        this.gombtorl=this.node.children(".torles");
+        console.log(this.gombtorl);
         this.gomb.on("click", () => {
             this.kattintModosit();
         });
-        this.gomb.on("click", () => {
-            this.kattintTorol();
+        this.gombtorl.on("click", () => {
+            this.kattintTorles();
         });
         this.setAdatok(this.adat);
     }
