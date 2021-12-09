@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="task.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
     <title>Drug Kings</title>
 </head>
 <body>
@@ -18,26 +19,32 @@
             </nav>
             <article>
                 <section id="letrehoztask">
-                    <form action="/action_page.php">
-                        <label for="felhasznalotxt">Felhasznalo: </label>
-                        <input  type="text" name="id" id="felhaszno" placeholder="ID"><br><br>
+                    <form">
+                        <label for="felhasznalo">ID: </label>
+                        <input  type="text" name="felhasznalo" id="felhasznalo" placeholder="Felhasznalo ID"><br>
 
-                        <label for="cimtxt">Cím: </label>
-                        <input type="text" name="cim" id="cim" placeholder="Cim"><br><br>
+                        <label for="cim">Cím: </label>
+                        
+                        <input type="text" name="cim" id="cim" placeholder="Cim"><br>
+                        <label for="leiras">Leiras: </label>
+                        <textarea type="text" name="leiras" id="leiras" placeholder="Leiras..."></textarea><br>
+                        
+                        <label for="status">Státusz: </label>
+                        <select id="status">
+                            <option id="folyamatban">Folyamatban</option>
+                            <option id="testelesalatt">Testelés alatt</option>
+                            <option id="kesz">Kész</option>
+                          </select><br>
 
-                        <label for="leirastxt">Leiras: </label>
-                        <input type="text" name="leiras" id="leiras" placeholder="Leiras..." rows="4" cols="50"><br><br>
+                            <label for="hatarido">Hatarido: </label>
+                            <input type="date" id="hatarido" name="hatarido"><br>
+                          </select><br>
 
-                        <label for="folyamatxt">Folyamatban: </label>
-                        <select id="statusz">
-                            <option label="Folyamatban"></option>
-                          </select><br><br>
-
-                            <label for="statusztxt">Hatarido: </label>
-                            <input type="date" id="hatarido" name="hatarido"><br><br>
-
-                            <option label="Folyamatban"></option>
-                          </select><br><br>
+                          <label for="elvegzi">A feladatot elvégzi: </label>
+                        <select id="elvegzi">
+                            <option id="-1">Válassz valakit</option>
+                            <option id="0">Ménesi Csaba</option>
+                          </select><br>
 
                           
 
