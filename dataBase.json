@@ -1,0 +1,26 @@
+{
+    "USER": [
+      {
+        "userId": 0,
+        "name": "Ménesi Csaba"
+      },
+      {
+        "userId": 1,
+        "name": "Bartók Roland"
+      },
+      {
+        "userId": 2,
+        "name": "Bogdán Gábor"
+      }
+    ],
+    "TASK": [
+      {
+        "id": 1,
+        "title": "Teszt title",
+        "description": "Teszt leírás",
+        "end-date" : "2020.12.09",
+        "userId" : 1,
+        "status" : "ToDo"
+      }
+    ]
+  }
